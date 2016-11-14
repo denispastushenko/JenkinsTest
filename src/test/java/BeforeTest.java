@@ -13,13 +13,9 @@ public class BeforeTest {
     protected  AssertPage assertPage;
 
     @BeforeMethod
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Denys\\Desktop\\chromedriver_win32\\chromedriver.exe");
-        try {
-            homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.firefox()));
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+        homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.firefox()));
         Page.getDriver().manage().window().maximize();
     }
 
