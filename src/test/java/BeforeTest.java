@@ -1,7 +1,7 @@
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,10 +12,11 @@ public class BeforeTest {
     protected TestPage testPage;
     protected  AssertPage assertPage;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Denys\\Desktop\\chromedriver_win32\\chromedriver.exe");
         homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.chrome()));
+        // photoPage = new PageObject(new ChromeDriver());
         Page.getDriver().manage().window().maximize();
     }
 
