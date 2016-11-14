@@ -15,7 +15,7 @@ public class BeforeTest {
     @BeforeMethod
     public void setUp() throws MalformedURLException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Denys\\Desktop\\chromedriver_win32\\chromedriver.exe");
-        homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.firefox()));
+        homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.chrome()));
         Page.getDriver().manage().window().maximize();
     }
 
