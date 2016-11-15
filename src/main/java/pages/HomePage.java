@@ -28,6 +28,7 @@ public class HomePage extends  Page {
         search.sendKeys(string);
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_ENTER);
         Thread.sleep(5000);
         robot.keyPress(KeyEvent.VK_ENTER);
         getSiteEpam.click();
