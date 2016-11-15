@@ -26,10 +26,11 @@ public class HomePage extends  Page {
     public TestPage testURL( String string) throws AWTException, InterruptedException {
 
         search.sendKeys(string);
+        Thread.sleep(2000);
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
         robot.keyPress(KeyEvent.VK_ENTER);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         robot.keyPress(KeyEvent.VK_ENTER);
         getSiteEpam.click();
         return  new TestPage(driver.get());
