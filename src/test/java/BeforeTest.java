@@ -19,7 +19,7 @@ public class BeforeTest {
 
     @Before
     public void setUp() throws MalformedURLException, AWTException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Denys\\Desktop\\chromedriver_win32\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Denys\\Desktop\\chromedriver_win32\\chromedriver.exe");
         homePage = new HomePage(new RemoteWebDriver(new URL("http://localhost:4445/wd/hub"), DesiredCapabilities.chrome()
         ));
         Page.getDriver().manage().window().maximize();

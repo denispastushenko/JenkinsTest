@@ -7,13 +7,13 @@ public class JenkinsTest extends BeforeTest{
         Page.getDriver().get(site);
         testPage = homePage.testURL("epam systems");
         assertPage = testPage.getLinkIdeas();
-        assertPage = assertPage.assertTest("Идеи и проекты");
+        assertPage = assertPage.assertTest("Ideas");
     }
     @Test
     public void signInTestErr() throws Exception {
         Page.getDriver().get(site);
         testPage = homePage.testURL("epam systems");
         assertPage = testPage.getLinkIdeas();
-        assertPage = assertPage.assertTest("Идеи");
+        assertPage = assertPage.assertTest("Ideasdsfsfs");
     }
 }

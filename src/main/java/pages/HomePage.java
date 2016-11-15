@@ -12,7 +12,7 @@ public class HomePage extends  Page {
 	@FindBy(id="lst-ib")
 	private WebElement search;
 
-    @FindBy(xpath="//a[@href='https://www.epam-group.ru/']")
+    @FindBy(xpath="//a[@href='https://www.epam.com/']")
     private WebElement getSiteEpam;
 
 
