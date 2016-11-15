@@ -29,6 +29,7 @@ public class HomePage extends  Page {
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_ENTER);
         Thread.sleep(5000);
+        robot.keyPress(KeyEvent.VK_ENTER);
         getSiteEpam.click();
         return  new TestPage(driver.get());
 
